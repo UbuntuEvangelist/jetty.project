@@ -121,10 +121,10 @@
                   <version>[1.8,)</version>
                   <message>[ERROR] OLD JDK [${java.version}] in use. Jetty ${project.version} requires JDK 1.8.0 or newer</message>
                 </requireJavaVersion>
-                <versionTxtRule implementation="org.eclipse.jetty.toolchain.enforcer.rules.VersionTxtRule" />
-                <versionOsgiRule implementation="org.eclipse.jetty.toolchain.enforcer.rules.RequireOsgiCompatibleVersionRule" />
-                <versionRedhatRule implementation="org.eclipse.jetty.toolchain.enforcer.rules.RequireRedhatCompatibleVersionRule" />
-                <versionDebianRule implementation="org.eclipse.jetty.toolchain.enforcer.rules.RequireDebianCompatibleVersionRule" />
+                <versionTxtRule implementation="org.eclipse.jetty.toolchain.enforcer.rules.VersionTxtRule"/>
+                <versionOsgiRule implementation="org.eclipse.jetty.toolchain.enforcer.rules.RequireOsgiCompatibleVersionRule"/>
+                <versionRedhatRule implementation="org.eclipse.jetty.toolchain.enforcer.rules.RequireRedhatCompatibleVersionRule"/>
+                <versionDebianRule implementation="org.eclipse.jetty.toolchain.enforcer.rules.RequireDebianCompatibleVersionRule"/>
               </rules>
             </configuration>
           </execution>
@@ -478,7 +478,7 @@
               <tag>
                 <name>org.apache.xbean.XBean</name>
                 <placement>X</placement>
-                <head />
+                <head/>
               </tag>
               <tag>
                 <name>phase</name>
@@ -513,22 +513,22 @@
               <tag>
                 <name>execute</name>
                 <placement>X</placement>
-                <head />
+                <head/>
               </tag>
               <tag>
                 <name>requiresDependencyResolution</name>
                 <placement>X</placement>
-                <head />
+                <head/>
               </tag>
               <tag>
                 <name>requiresProject</name>
                 <placement>X</placement>
-                <head />
+                <head/>
               </tag>
               <tag>
                 <name>threadSafe</name>
                 <placement>X</placement>
-                <head />
+                <head/>
               </tag>
             </tags>
           </configuration>
@@ -712,7 +712,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -728,7 +728,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -746,7 +746,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -759,7 +759,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -772,7 +772,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -788,7 +788,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -805,7 +805,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -818,7 +818,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -831,7 +831,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -844,7 +844,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -857,7 +857,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
               </pluginExecutions>
@@ -959,7 +959,7 @@
       <dependency>
         <groupId>org.eclipse.jetty.toolchain</groupId>
         <artifactId>jetty-test-helper</artifactId>
-        <version>4.2</version>
+        <version>5.1</version>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty.toolchain</groupId>
@@ -1263,7 +1263,7 @@
             <artifactId>maven-javadoc-plugin</artifactId>
             <configuration>
               <!-- needed for Java 8+ -->
-              <additionalparam>&#45;&#45;allow-script-in-comments</additionalparam>
+              <additionalparam>--allow-script-in-comments</additionalparam>
               <header>
                 <![CDATA[
                   <script type="text/javascript">
